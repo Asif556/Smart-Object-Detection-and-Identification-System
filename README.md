@@ -1,4 +1,4 @@
-# -Asif556-Smart-Object-Detection-and-Identification-System-
+#Smart-Object-Detection-and-Identification-System-
 
 Project Overview
 This project is an autonomous car built with Arduino and Raspberry Pi 3 Model B. It utilizes an ultrasonic sensor for obstacle detection and Raspberry Pi for object recognition. The goal is to enable the car to navigate its environment autonomously, avoiding obstacles and identifying objects in real-time.
