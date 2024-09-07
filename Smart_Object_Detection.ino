@@ -7,7 +7,7 @@
 #define TRIG_PIN_FIXED 2  
 #define ECHO_PIN_FIXED 3  
 #define MAX_DISTANCE 500
-#define MAX_SPEED 190 // sets speed of DC motors
+#define MAX_SPEED 190 
 #define MAX_SPEED_OFFSET 20
 
 NewPing sonarMoving(TRIG_PIN_MOVING, ECHO_PIN_MOVING, MAX_DISTANCE); 
