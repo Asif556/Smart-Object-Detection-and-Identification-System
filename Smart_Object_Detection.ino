@@ -4,13 +4,12 @@
 
 #define TRIG_PIN_MOVING A0 
 #define ECHO_PIN_MOVING A1 
-#define TRIG_PIN_FIXED 2  // Pin for the fixed ultrasonic sensor
-#define ECHO_PIN_FIXED 3  // Pin for the fixed ultrasonic sensor
+#define TRIG_PIN_FIXED 2  
+#define ECHO_PIN_FIXED 3  
 #define MAX_DISTANCE 500
 #define MAX_SPEED 190 // sets speed of DC motors
 #define MAX_SPEED_OFFSET 20
 
-// Create NewPing instances for both sensors
 NewPing sonarMoving(TRIG_PIN_MOVING, ECHO_PIN_MOVING, MAX_DISTANCE); 
 NewPing sonarFixed(TRIG_PIN_FIXED, ECHO_PIN_FIXED, MAX_DISTANCE); 
 
@@ -31,7 +30,6 @@ void setup() {
   myservo.write(servoPos); 
   delay(2000);
 
-  // Initial distance readings
   distanceMoving = readMovingPing();
   distanceFixed = readFixedPing();
 }
